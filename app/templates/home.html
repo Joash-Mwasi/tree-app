@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome, {{ current_user.username }}!</h1>
+    <form method="POST" action="{{ url_for('plant_tree') }}">
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location" required>
+        <button type="submit">Plant Tree</button>
+    </form>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
