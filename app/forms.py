@@ -1,6 +1,6 @@
-from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
-from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
+from flask_wtf import FlaskForm # type: ignore
+from wtforms import StringField, PasswordField, SubmitField, BooleanField # type: ignore
+from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError # type: ignore
 from app.models import User
 
 class RegistrationForm(FlaskForm):
